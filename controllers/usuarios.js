@@ -78,8 +78,6 @@ const usuariosDelete = async (req, res = response) => {
 
 	res.json({
 		usuario,
-		//  msg: 'delete Api - controlador',
-		//  id
 	});
 };
 
