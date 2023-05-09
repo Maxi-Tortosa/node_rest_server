@@ -54,7 +54,6 @@ const usuariosPut = async (req, res = response) => {
 	const { id } = req.params;
 	const { _id, password, google, correo, ...resto } = req.body;
 
-	//Validar password contra base de datos
 	if (password) {
 		const salt = bcryptjs.genSaltSync();
 		resto.password = bcryptjs.hashSync(password, salt);
